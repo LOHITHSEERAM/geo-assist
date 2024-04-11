@@ -4,7 +4,6 @@ package application.beta.geoassist.Index;
 import application.beta.geoassist.pojo.GeoType;
 import application.beta.geoassist.util.Shapes.BBox;
 import application.beta.geoassist.util.Shapes.Circle;
-import org.antlr.v4.runtime.misc.NotNull;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -86,7 +85,7 @@ public class QuadTree {
         }
     }
 
-    public Node insert(@NotNull GeoType at) {
+    public Node insert(GeoType at) {
         return insert(root, at);
     }
 

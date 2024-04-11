@@ -55,8 +55,7 @@ public class GeoDataEateries {
         GeoType eat = new Attractions();
         eat.setLongitude(12.9984461);
         eat.setLatitude(77.5920015);
-        System.out.println(quadTree.getNearByWithoutRange(eat));
-        System.out.println(quadTree.getNearByWithRange(eat, new Circle(eat.getLatitude(), eat.getLongitude(), 300)).size());
+        System.out.println(quadTree.getNearByWithRange(eat, new Circle(eat.getLatitude(), eat.getLongitude(), 300)));
 
     }
 }
